@@ -1,16 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>Curso HTML5 Essencial</title>
-        
-        <link href="css/estilo.css" rel="stylesheet" media="screen">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Curso HTML5 Essencial</title>
 
-    <body>
-        
-        <h2>Formulário</h2>
-        
-    
-    </body>
+    <link href="css/estilo.css" rel="stylesheet" media="screen" />
+  </head>
+
+  <body>
+    <h2>Formulário</h2>
+    <form action="destino.html" method="POST">
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" id="nome" size="30" maxlength="100" />
+
+      <label for="telefone">Telefone</label>
+      <input
+        type="text"
+        name="telefone"
+        id="telefone"
+        size="30"
+        maxlength="30"
+      />
+
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" size="30" maxlength="60" />
+
+      <input type="submit" value="Enviar" id="enviar" />
+    </form>
+  </body>
 </html>
